@@ -1,7 +1,7 @@
 if SHIELD_PEKS48_R
 
 config ZMK_KEYBOARD_NAME
-    default "peks48"
+    default "PEKS48"
 
 config ZMK_BLE
     default y
