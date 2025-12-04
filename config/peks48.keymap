@@ -134,7 +134,7 @@
         layer_1 {
             bindings = <
 &kp LEFT_PARENTHESIS  &kp ASTRK      &kp UP_ARROW   &kp LS(R)    &kp F1      &kp SLASH       &kp SLASH     &kp MINUS         &kp COMMA          &kp PERIOD  &kp RIGHT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp LC(Z)             &kp LEFT       &kp DOWN       &kp RIGHT    &kp F2      &kp QUESTION    &kp QUESTION  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none       &none                  &none
+&kp LC(Z)             &kp LEFT       &kp DOWN       &kp RIGHT    &kp F2      &kp QUESTION    &kp QUESTION  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none       &kp LA(SEMI)           &none
 &trans                &kp LS(LC(Z))  &kp LS(LC(Z))  &kp F11      &kp F9      &kp KP_COMMA    &kp EXCL      &kp EXCLAMATION   &none              &none       &kp F8                 &trans
 &kp KP_EQUAL          &kp LA(N0)     &kp LC(F11)    &kp LS(F12)  &kp LS(F9)  &trans          &trans        &none             &none              &none       &kp ENTER              &none
             >;
@@ -151,10 +151,10 @@
 
         layer_3 {
             bindings = <
-&kp DOUBLE_QUOTES  &kp AT  &kp HASH  &none   &kp C_VOL_DN  &kp C_VOL_UP    &kp PIPE  &kp TILDE  &kp GRAVE  &none  &kp C_VOL_DN          &kp C_VOL_UP
-&kp TAB            &none   &none     &none   &kp F4        &none           &none     &none      &none      &none  &none                 &none
-&none              &none   &none     &none   &kp F7        &kp F5          &none     &none      &none      &none  &kp C_BRIGHTNESS_INC  &none
-&none              &none   &none     &kp F3  &none         &none           &none     &none      &none      &none  &kp C_BRIGHTNESS_DEC  &none
+&kp DOUBLE_QUOTES  &kp AT                &kp HASH              &none   &kp C_VOL_DN  &kp C_VOL_UP    &kp PIPE  &kp TILDE  &kp GRAVE  &none  &kp C_VOL_DN          &kp C_VOL_UP
+&kp TAB            &kp LS(LC(NUMBER_3))  &kp LS(LC(NUMBER_4))  &none   &kp F4        &none           &none     &none      &none      &none  &none                 &none
+&none              &none                 &none                 &none   &kp F7        &kp F5          &none     &none      &none      &none  &kp C_BRIGHTNESS_INC  &none
+&none              &none                 &none                 &kp F3  &none         &none           &none     &none      &none      &none  &kp C_BRIGHTNESS_DEC  &none
             >;
         };
 
