@@ -106,7 +106,7 @@
 
         config {
             bindings = <&kp F12>;
-            key-positions = <41 29>;
+            key-positions = <41 40>;
             timeout-ms = <50>;
             layers = <0>;
         };
