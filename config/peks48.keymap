@@ -140,10 +140,10 @@
 
         layer_1 {
             bindings = <
-&kp LEFT_PARENTHESIS  &kp ASTRK      &kp UP_ARROW   &kp LS(R)    &kp F1      &kp SLASH       &kp SLASH     &kp MINUS         &kp COMMA          &kp PERIOD            &kp RIGHT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp LC(Z)             &kp LEFT       &kp DOWN       &kp RIGHT    &kp F2      &kp QUESTION    &kp QUESTION  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none                 &kp LA(SEMI)           &none
-&trans                &kp LS(LC(Z))  &kp LS(LC(Z))  &kp F11      &kp F9      &kp KP_COMMA    &none         &kp EXCLAMATION   &none              &none                 &kp F8                 &mt RIGHT_SHIFT LC(LG(SPACE))
-&kp KP_EQUAL          &kp LA(N0)     &kp LC(F11)    &kp LS(F12)  &kp LS(F9)  &trans          &trans        &none             &none              &kp LC(LEFT_BRACKET)  &kp ENTER              &kp LC(RIGHT_BRACKET)
+&kp LEFT_PARENTHESIS  &kp ASTRK   &kp UP_ARROW   &kp LS(R)    &kp F1      &kp SLASH       &kp SLASH     &kp MINUS         &kp COMMA          &kp PERIOD            &kp RIGHT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp LC(Z)             &kp LEFT    &kp DOWN       &kp RIGHT    &kp F2      &kp QUESTION    &kp QUESTION  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none                 &kp LA(SEMI)           &none
+&trans                &kp MINUS   &kp LS(LC(Z))  &kp F11      &kp F9      &kp KP_COMMA    &none         &kp EXCLAMATION   &none              &none                 &kp F8                 &mt RIGHT_SHIFT LC(LG(SPACE))
+&kp KP_EQUAL          &kp LA(N0)  &kp LC(F11)    &kp LS(F12)  &kp LS(F9)  &trans          &trans        &none             &none              &kp LC(LEFT_BRACKET)  &kp ENTER              &kp LC(RIGHT_BRACKET)
             >;
         };
 
