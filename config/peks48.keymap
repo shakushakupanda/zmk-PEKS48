@@ -105,13 +105,6 @@
             layers = <0>;
         };
 
-        n {
-            bindings = <&kp N>;
-            key-positions = <40 15>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
         ble {
             bindings = <&mo 4>;
             key-positions = <11 10 9>;
@@ -129,6 +122,27 @@
         L_click {
             bindings = <&mkp LCLK>;
             key-positions = <41 40>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        n {
+            bindings = <&kp N>;
+            key-positions = <40 13>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        n {
+            bindings = <&kp N>;
+            key-positions = <40 14>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        n {
+            bindings = <&kp N>;
+            key-positions = <40 15>;
             timeout-ms = <50>;
             layers = <0>;
         };
@@ -150,7 +164,7 @@
             bindings = <
 &kp LEFT_PARENTHESIS  &kp ASTRK   &kp UP_ARROW   &kp LS(R)    &kp F1      &kp SLASH       &kp SLASH     &kp MINUS         &kp COMMA          &kp PERIOD            &kp RIGHT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp LC(Z)             &kp LEFT    &kp DOWN       &kp RIGHT    &kp F2      &kp QUESTION    &kp QUESTION  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none                 &kp LA(SEMI)           &none
-&trans                &kp MINUS   &kp LS(LC(Z))  &kp F11      &kp F9      &kp KP_COMMA    &none         &kp EXCLAMATION   &none              &none                 &kp F8                 &mt RIGHT_SHIFT LC(LG(SPACE))
+&trans                &kp MINUS   &kp LS(LC(Z))  &kp F11      &kp F9      &kp N5          &none         &kp EXCLAMATION   &none              &none                 &kp F8                 &mt RIGHT_SHIFT LC(LG(SPACE))
 &kp KP_EQUAL          &kp LA(N0)  &kp LC(F11)    &kp LS(F12)  &kp LS(F9)  &trans          &trans        &none             &none              &kp LC(LEFT_BRACKET)  &kp ENTER              &kp LC(RIGHT_BRACKET)
             >;
         };
@@ -160,7 +174,7 @@
 &none   &none         &kp AMPERSAND  &kp CARET  &kp PERCENT  &none     &kp SLASH     &kp N7        &kp N8        &kp N9        &kp COLON  &kp COLON
 &none   &none         &none          &none      &none        &none     &kp KP_MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none      &none
 &trans  &none         &none          &none      &none        &none     &kp KP_DOT    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none      &none
-&none   &kp LEFT_ALT  &kp LCTRL      &kp F3     &none        &kp N0    &kp N0        &none         &none         &none         &kp ENTER  &none
+&none   &kp LEFT_ALT  &kp LCTRL      &kp F3     &none        &kp N0    &kp N0        &kp KP_COMMA  &none         &none         &kp ENTER  &none
             >;
         };
 
