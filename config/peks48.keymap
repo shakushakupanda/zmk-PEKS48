@@ -4,6 +4,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 // Conversion definition for using Japanese keyboard with OS settings
 
@@ -124,6 +125,13 @@
             timeout-ms = <50>;
             layers = <0>;
         };
+
+        L_click {
+            bindings = <&mkp LCLK>;
+            key-positions = <41 40>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -133,7 +141,7 @@
             bindings = <
 &kp ESC     &kp W         &kp E             &kp R  &kp T      &kp Y          &kp Y        &kp U     &kp I    &kp O           &kp P           &kp PAGE_UP
 &kp A       &kp S         &kp D             &kp F  &kp G      &kp H          &kp H        &kp J     &kp K    &kp L           &kp EQUAL       &kp PAGE_DOWN
-&kp LSHIFT  &kp U         &kp X             &kp C  &kp V      &kp B          &kp F10      &kp N     &kp M    &kp F6          &kp UP_ARROW    &mt RIGHT_SHIFT CAPSLOCK
+&kp LSHIFT  &kp U         &kp X             &kp C  &kp V      &kp B          &none        &kp N     &kp M    &kp LEFT_GUI    &kp UP_ARROW    &mt RIGHT_SHIFT CAPSLOCK
 &mo 3       &kp LEFT_ALT  &kp LEFT_CONTROL  &kp M  &kp SPACE  &lt 1 ENTER    &lt 1 ENTER  &kp HOME  &kp END  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
         };
@@ -149,19 +157,19 @@
 
         layer_2 {
             bindings = <
-&none   &none         &kp AMPERSAND  &kp CARET  &kp PERCENT  &none    &kp SLASH     &kp N7        &kp N8        &kp N9        &kp COLON  &kp COLON
-&none   &none         &none          &none      &none        &none    &kp KP_MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none      &none
-&trans  &none         &none          &none      &none        &none    &kp KP_DOT    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none      &none
-&none   &kp LEFT_ALT  &kp LCTRL      &none      &none        &none    &kp N0        &none         &none         &none         &kp ENTER  &none
+&none   &none         &kp AMPERSAND  &kp CARET  &kp PERCENT  &none     &kp SLASH     &kp N7        &kp N8        &kp N9        &kp COLON  &kp COLON
+&none   &none         &none          &none      &none        &none     &kp KP_MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none      &none
+&trans  &none         &none          &none      &none        &none     &kp KP_DOT    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none      &none
+&none   &kp LEFT_ALT  &kp LCTRL      &kp F3     &none        &kp N0    &kp N0        &none         &none         &none         &kp ENTER  &none
             >;
         };
 
         layer_3 {
             bindings = <
-&kp DOUBLE_QUOTES  &kp AT                &kp HASH              &none   &kp C_VOL_DN  &kp C_VOL_UP    &kp PIPE  &kp TILDE  &kp GRAVE  &none  &kp C_VOL_DN          &kp C_VOL_UP
-&kp TAB            &kp LS(LC(NUMBER_3))  &kp LS(LC(NUMBER_4))  &none   &kp F4        &none           &none     &none      &none      &none  &none                 &none
-&none              &none                 &none                 &none   &kp F7        &kp F5          &none     &none      &none      &none  &kp C_BRIGHTNESS_INC  &none
-&none              &none                 &none                 &kp F3  &none         &none           &none     &none      &none      &none  &kp C_BRIGHTNESS_DEC  &none
+&kp DOUBLE_QUOTES  &kp AT                &kp HASH              &none          &kp C_VOL_DN   &kp C_VOL_UP    &kp PIPE  &kp TILDE  &kp GRAVE  &none  &kp C_VOL_DN          &kp C_VOL_UP
+&kp TAB            &kp LS(LC(NUMBER_3))  &kp LS(LC(NUMBER_4))  &none          &kp F4         &none           &none     &none      &none      &none  &none                 &none
+&none              &none                 &none                 &none          &kp F7         &kp F5          &none     &none      &none      &none  &kp C_BRIGHTNESS_INC  &none
+&none              &none                 &none                 &kp LC(LG(S))  &kp LG(SLASH)  &none           &none     &none      &none      &none  &kp C_BRIGHTNESS_DEC  &none
             >;
         };
 
@@ -170,7 +178,7 @@
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none    &none  &none  &none  &none  &none  &none
 &none         &none         &none         &none         &none         &none    &none  &none  &none  &none  &none  &none
 &none         &none         &none         &none         &none         &none    &none  &none  &none  &none  &none  &bt BT_CLR
-&none         &none         &none         &none
+&none         &none         &kp F6        &kp F10
             >;
         };
     };
