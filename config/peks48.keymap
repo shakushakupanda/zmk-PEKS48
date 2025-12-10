@@ -124,7 +124,7 @@
         n {
             bindings = <&kp N>;
             key-positions = <40 15>;
-            timeout-ms = <50>;
+            timeout-ms = <70>;
             layers = <0>;
         };
 
