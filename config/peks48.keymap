@@ -156,6 +156,13 @@
             slow-release;
             layers = <1>;
         };
+
+        n2 {
+            bindings = <&kp N>;
+            key-positions = <15 41>;
+            timeout-ms = <60>;
+            layers = <0>;
+        };
     };
 
     keymap {
