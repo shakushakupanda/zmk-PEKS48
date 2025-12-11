@@ -3,6 +3,11 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include <physical_layouts.dtsi>
 
+&uicr {
+    nfct-pins-as-gpios;
+};
+
+
 / {
     chosen {
         //zmk,kscan = &kscan0;
